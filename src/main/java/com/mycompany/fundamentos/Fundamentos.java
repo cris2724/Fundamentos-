@@ -8,16 +8,24 @@ package com.mycompany.fundamentos;
  *
  * @author ALUMNO
  */
+import java.util.Scanner 
+    
 public class Fundamentos {
 
     public static void main(String[] args) {
+        Scanner sc.newScanner(System.in);
         
-        int n1 = 8;
-        System.out.println("numero n1:" + n1);
-        int n2 = 7;
-        System.out.println("numero n2:" + n2);
-        int s = n1 + n2;
-        System.out.println("resultado:" + s);
+        System.out.println("ingrese partidos ganados");
+        int ganados = sc.nextlnt();
+        
+        System.out.println("ingrese partidos empatados");
+        int empatados = sc.nextlnt();
+        
+        System.out.println("ingrese partidos perdidos");
+        int perdidos = sc.nextlnt();
+
+        int puntaje total = ((ganados*3)+(empatados*1)+(perdidos*0));
+        sc.close();
         
     }
 }
