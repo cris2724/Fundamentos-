@@ -13,19 +13,20 @@ import java.util.Scanner
 public class Fundamentos {
 
     public static void main(String[] args) {
-        Scanner sc.newScanner(System.in);
+    Scanner sc = new Scanner(System.in);
         
-        System.out.println("ingrese partidos ganados");
-        int ganados = sc.nextlnt();
-        
-        System.out.println("ingrese partidos empatados");
-        int empatados = sc.nextlnt();
-        
-        System.out.println("ingrese partidos perdidos");
-        int perdidos = sc.nextlnt();
-
-        int puntaje total = ((ganados*3)+(empatados*1)+(perdidos*0));
-        sc.close();
+         System.out.println("ingrese partidos ganados");
+         int pg = sc.nextInt();
+         
+         System.out.println("ingrese partidos empatados");
+         int pe = sc.nextInt();
+         
+         System.out.println("ingrese partidos perdidos");
+         int pp = sc.nextInt();
+         
+         int pf = (pg*3)+(pe*1);
+         
+         System.out.println("el pf del equipo es:"+pf);
         
     }
 }
